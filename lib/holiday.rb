@@ -74,10 +74,10 @@ def all_supplies_in_holidays(holiday_hash)
           item_string.concat(", ")
         end
         string_of_holidays.concat(item_string)
-          
       end
     end
   end
+  string_of_holidays
 end
 
 def all_holidays_with_bbq(holiday_hash)
