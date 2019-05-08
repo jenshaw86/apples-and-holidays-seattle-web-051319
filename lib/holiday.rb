@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts season_string
     
     holidays.each do |holiday, supplies|
-      holiday_string = "#{holiday.to_s.split("_").mapcapitalize.join}: "
+      holiday_string = "#{holiday.to_s.split("_").map(&:capitalize).join}: "
       print holiday_string.indent(1)
       supplies.each_with_index do |item, index|
         item_string = "#{item.to_s}"
