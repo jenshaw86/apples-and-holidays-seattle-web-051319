@@ -58,7 +58,6 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  string_of_holidays = ""
   
   holiday_hash.each do |season, holidays|
     season_string = "#{season.to_s.capitalize}:"
@@ -66,13 +65,13 @@ def all_supplies_in_holidays(holiday_hash)
     
     holidays.each do |holiday, supplies|
       holiday_string = "#{holiday.to_s.split("_").map(&:capitalize).join}: "
-      puts holiday_string.chomp
+
       supplies.each_with_index do |item, index|
         item_string = "#{item.to_s}"
         if index != supplies.length - 1
           item_string.concat(", ")
         end
-        puts item_string.chomp
+        holiday_string.concat(item_string)
       end
     end
   end
