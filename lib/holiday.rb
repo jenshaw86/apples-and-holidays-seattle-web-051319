@@ -68,8 +68,9 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_string = "#{holiday.to_s.split("_").join.capitalize}:"
       string_of_holidays.concat(holiday_string)
       
-      supplies.each_ do |item|
-        item_string = #{item.to_s}"
+      supplies.each_with_index do |item, index|
+        if index != supplies.length - 1
+        item_string = #{item.to_s}, "
       end
     end
   end
