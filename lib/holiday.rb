@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     holidays.each do |holiday, supplies|
       holiday_string = "#{holiday.to_s.split("_").capitalize.join}: "
-      print holiday_string.indent
+      print holiday_string.indent(1)
       supplies.each_with_index do |item, index|
         item_string = "#{item.to_s}"
         if index != supplies.length - 1
