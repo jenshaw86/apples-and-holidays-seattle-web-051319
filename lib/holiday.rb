@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
         if index != supplies.length - 1
           item_string.concat(", ")
         end
-        puts item_string
+        print item_string
       end
     end
   end
