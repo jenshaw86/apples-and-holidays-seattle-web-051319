@@ -72,7 +72,8 @@ def all_supplies_in_holidays(holiday_hash)
         item_string = "#{item.to_s}"
         if index != supplies.length - 1
           item_string.concat(", ")
-        else
+        end
+        string_of_holidays.concat(item_string)
           
       end
     end
