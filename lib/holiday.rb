@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
       supplies.each_with_index do |item, index|
         item_string = " #{item.to_s}"
         if index != supplies.length - 1
-          item_string.concat(", ")
+          item_string.concat(",")
         end
         holiday_and_supplies.concat(item_string)
       end
