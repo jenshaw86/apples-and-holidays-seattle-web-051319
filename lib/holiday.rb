@@ -77,7 +77,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
     end
   end
-  string_of_holidays
+  puts string_of_holidays
 end
 
 def all_holidays_with_bbq(holiday_hash)
